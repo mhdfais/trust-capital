@@ -137,13 +137,13 @@ Version: 1.0
 
 .goals-container {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   padding-top: 3px;
 }
 
 .goal-item {
-  border: 1px solid black;
-  padding: 7px 5px;
+  border: 1px solid #dbdbdb;
+  padding: 7px 12px;
 }
 
 .goal-item h3 {
@@ -3220,14 +3220,14 @@ label {
   border: 1px solid var(--border-color);
 }
 .bizzen-service-item.style-one .service-inner-content {
-  background: -webkit-gradient(
+  /* background: -webkit-gradient(
     linear,
     left bottom,
     left top,
     from(#f4f8ec),
     color-stop(155.15%, rgba(255, 255, 255, 0))
   );
-  background: linear-gradient(0deg, #f4f8ec 0%, rgba(255, 255, 255, 0) 155.15%);
+  background: linear-gradient(0deg, #f4f8ec 0%, rgba(255, 255, 255, 0) 155.15%); */
   padding: 12px 18px 30px;
 }
 .bizzen-service-item.style-one .service-inner-content .content {

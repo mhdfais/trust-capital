@@ -29,6 +29,47 @@
     <link rel="stylesheet" href="assets/css/spacings.css">
     <!--====== Default css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <style>
+        .home-hero-img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .home-hero-img img {
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease-out;
+            transform-origin: center center;
+            will-change: transform;
+        }
+
+        /* .card-hover {
+            } */
+
+        .card-hover:hover {
+            background-color: #98FF49;
+            transition: background-color 0.6s ease;
+
+
+        }
+
+        /* .card-hover h4:hover{
+color: black;
+            } */
+
+        .bizzen-service-item .read-more {
+            transition: all 1s ease
+        }
+
+        .bizzen-service-item:hover .read-more {
+            transform: translateX(100px);
+            /* adjust as needed */
+            /* color: #fff; */
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -122,7 +163,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-lg-8">
-                                    <div class="hero-content">
+                                    <div class="hero-content" style="margin-bottom: 4rem;">
                                         <!-- <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Business Consulting Agency</span> -->
                                         <h2 class="text-anm">Sustainable Metal Recycling & Global Scrap Trading</h2>
                                         <div class="hero-button" data-aos="fade-up" data-aos-duration="1400">
@@ -195,7 +236,7 @@
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <!--=== Bizzen Service Item ===-->
-                                <div class="bizzen-service-item style-one mb-30" data-aos="fade-up"
+                                <div class="bizzen-service-item style-one mb-30 card-hover" data-aos="fade-up"
                                     data-aos-duration="1000">
                                     <div class="service-inner-content">
                                         <div class="icon">
@@ -208,7 +249,7 @@
 
                                         </div>
                                         <div class="content">
-                                            <h4 class="title"><a href="service-details.html">Business Consulting</a>
+                                            <h4 class="title"><a href="">Business Consulting</a>
                                             </h4>
                                             <p>Delivering fast, effective solutions to overcome complex business
                                                 challenges with ease.</p>
@@ -220,7 +261,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <!--=== Bizzen Service Item ===-->
-                                <div class="bizzen-service-item style-one mb-30" data-aos="fade-up"
+                                <div class="bizzen-service-item style-one mb-30 card-hover" data-aos="fade-up"
                                     data-aos-duration="1200">
                                     <div class="service-inner-content">
                                         <div class="icon">
@@ -233,7 +274,7 @@
 
                                         </div>
                                         <div class="content">
-                                            <h4 class="title"><a href="service-details.html">Finance Management</a></h4>
+                                            <h4 class="title"><a href="">Finance Management</a></h4>
                                             <p>Accelerate your growth with our rapid, strategic and results-driven
                                                 Business solutions.</p>
                                             <a href="service-details.html" class="read-more style-one">GET STARTED <i
@@ -244,7 +285,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <!--=== Bizzen Service Item ===-->
-                                <div class="bizzen-service-item style-one mb-30" data-aos="fade-up"
+                                <div class="bizzen-service-item style-one mb-30 card-hover" data-aos="fade-up"
                                     data-aos-duration="1400">
                                     <div class="service-inner-content">
                                         <div class="icon">
@@ -257,7 +298,7 @@
 
                                         </div>
                                         <div class="content">
-                                            <h4 class="title"><a href="service-details.html">Invest Process</a></h4>
+                                            <h4 class="title"><a href="">Invest Process</a></h4>
                                             <p>Providing smart, fast, and scalable solutions tailored your Consulting
                                                 business needs.</p>
                                             <a href="service-details.html" class="read-more style-one">GET STARTED <i
@@ -268,7 +309,7 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <!--=== Bizzen Service Item ===-->
-                                <div class="bizzen-service-item style-one mb-30" data-aos="fade-up"
+                                <div class="bizzen-service-item style-one mb-30 card-hover" data-aos="fade-up"
                                     data-aos-duration="1600">
                                     <div class="service-inner-content">
                                         <div class="icon">
@@ -281,7 +322,7 @@
 
                                         </div>
                                         <div class="content">
-                                            <h4 class="title"><a href="service-details.html">Life Insurance</a></h4>
+                                            <h4 class="title"><a href="">Life Insurance</a></h4>
                                             <p>Your shortcut to powerful, reliable results through our fast Business
                                                 consulting approach.</p>
                                             <a href="service-details.html" class="read-more style-one">GET STARTED <i
@@ -362,7 +403,7 @@
                     </div>
                 </section>
 
-                <section class="materials-section py-5 py-xl-0 my-xl-0">
+                <section class="materials-section py-5 py-xl-0 my-xl-0" style="background-color: #f7f7f8;">
                     <div class="container">
                         <div class="row align-items-center g-0">
                             <div class="col-xl-4 col-lg-12">
@@ -378,30 +419,45 @@
                                 style="border-left: 1px solid #e6e7e8; border-right: 1px solid #e6e7e8;">
                                 <!--=== Section Title ===-->
                                 <div class="bizzen-work-list">
-                                    <div class="bizzen-process-item" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="number">
-                                            01
-                                        </div>
-                                        <div class="content">
-                                            <h4 class="text-muted">Consultation with ideas</h4>
+                                    <div class="bizzen-process-item style-one" data-aos="fade-up"
+                                        data-aos-duration="1000">
+                                        <div>
+
+                                            <div class="" style="color: black; font-weight: normal;">
+                                                01&nbsp; Nickel
+                                            </div>
+                                            <div class="content" style="padding-left: 1.5rem;">
+                                                <h4 class="text-muted" style="max-width: 250px; font-size: 0.9rem;">We
+                                                    Provide a large quantity of Nickel scrap, it
+                                                    refers to discarded or waste materials containing nickel.</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="bizzen-process-item style-one" data-aos="fade-up"
                                         data-aos-duration="1200">
-                                        <div class="number">
-                                            02
-                                        </div>
-                                        <div class="content">
-                                            <h4>Completed case studies</h4>
+                                        <div>
+
+                                            <div class="" style="color: black; font-weight: normal;">
+                                                02&nbsp; Copper
+                                            </div>
+                                            <div class="content" style="padding-left: 1.5rem;">
+                                                <h4 class="text-muted" style="max-width: 250px; font-size: 0.9rem;">
+                                                    Copper wire, Copper cathodes, Copper millberry, Copper tubing</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="bizzen-process-item style-one" data-aos="fade-up"
                                         data-aos-duration="1400">
-                                        <div class="number">
-                                            03
-                                        </div>
-                                        <div class="content">
-                                            <h4>Expertise and team work</h4>
+                                        <div>
+
+                                            <div class="" style="color: black; font-weight: normal;">
+                                                03&nbsp; Aluminium
+                                            </div>
+                                            <div class="content" style="padding-left: 1.5rem;">
+                                                <h4 class="text-muted" style="max-width: 250px; font-size: 0.9rem;">We
+                                                    Aluminum extrusions, Aluminum cans, Aluminum wheels, Sheet aluminum
+                                                </h4>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -411,29 +467,42 @@
                                 <div class="bizzen-work-list">
                                     <div class="bizzen-process-item style-one" data-aos="fade-up"
                                         data-aos-duration="1000">
-                                        <div class="number">
-                                            01
-                                        </div>
-                                        <div class="content">
-                                            <h4>Consultation with ideas</h4>
+                                        <div>
+
+                                            <div class="" style="color: black; font-weight: normal;">
+                                                04&nbsp; Brass & Bronze
+                                            </div>
+                                            <div class="content" style="padding-left: 1.5rem;">
+                                                <h4 class="text-muted" style="max-width: 250px; font-size: 0.9rem;">We
+                                                    Yellow brass, Red brass, Bronze bushings, Brass fittings</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="bizzen-process-item style-one" data-aos="fade-up"
                                         data-aos-duration="1200">
-                                        <div class="number">
-                                            02
-                                        </div>
-                                        <div class="content">
-                                            <h4>Completed case studies</h4>
+                                        <div>
+
+                                            <div class="" style="color: black; font-weight: normal;">
+                                                05&nbsp; Electronic Scrap
+                                            </div>
+                                            <div class="content" style="padding-left: 1.5rem;">
+                                                <h4 class="text-muted" style="max-width: 250px; font-size: 0.9rem;">We
+                                                    Circuit boards, Computer parts, Electronic components</h4>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="bizzen-process-item style-one" data-aos="fade-up"
                                         data-aos-duration="1400">
-                                        <div class="number">
-                                            03
-                                        </div>
-                                        <div class="content">
-                                            <h4>Expertise and team work</h4>
+                                        <div>
+
+                                            <div class="" style="color: black; font-weight: normal;">
+                                                06&nbsp; Tin
+                                            </div>
+                                            <div class="content" style="padding-left: 1.5rem;">
+                                                <h4 class="text-muted" style="max-width: 250px; font-size: 0.9rem;">We
+                                                    Low minimum order quantity (MOQ) and flexible production
+                                                    capabilities</h4>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -446,7 +515,8 @@
                 <section class="sustainability-section">
                     <div class="container-fluid">
                         <div class="sustainability text-center" style="color: gray;">SUSTAINABILITY</div>
-                        <h1 class="main-heading text-center" style="color: black;">Our Commitment to Sustainability and<br>Environmental Responsibility
+                        <h1 class="main-heading text-center" style="color: black;">Our Commitment to Sustainability
+                            and<br>Environmental Responsibility
                         </h1>
 
                         <div class="content-wrapper">
@@ -484,7 +554,8 @@
                     <div class="form-side">
                         <div class="contact" style="color: white;">CONTACT</div>
                         <h1 class="main-heading" style="color: white;">Get in Touch</h1>
-                        <p class="description" style="color: white;">Ready to partner with us? Let's discuss how we can help with your metal
+                        <p class="description" style="color: white;">Ready to partner with us? Let's discuss how we can
+                            help with your metal
                             recycling needs</p>
 
                         <form class="contact-form">
@@ -536,7 +607,8 @@
                                             <a href="index.html"><img src="assets/images/home-one/hero/main-logo-1.png"
                                                     alt="logo white"></a>
                                         </div>
-                                        <p class="mb-20">Leading the way in sustainable metal recycling and global trading
+                                        <p class="mb-20">Leading the way in sustainable metal recycling and global
+                                            trading
                                         </p>
                                         <form>
                                             <div class="form-group">
@@ -588,7 +660,7 @@
                                                             <li>
                                                                 <a href="">+1 (555) 123-4567</a>
                                                             </li>
-                                                             <li>
+                                                            <li>
                                                                 <a href="">info@trustedcapital.com</a>
                                                             </li>
                                                         </ul>
@@ -663,6 +735,48 @@
     <script src="assets/js/plugins/aos.js"></script>
     <!--====== Common js ======-->
     <script src="assets/js/theme.js"></script>
+
+    <script>
+        const heroImgContainer = document.querySelector('.home-hero-img');
+        const heroImg = heroImgContainer.querySelector('img');
+
+        let targetX = 50, targetY = 50; // desired position (percent)
+        let currentX = 50, currentY = 50; // current position (percent)
+        let scale = 1;
+        let isHovering = false;
+
+        // Smooth animation loop (60fps)
+        function animate() {
+            // Lerp toward target position
+            currentX += (targetX - currentX) * 0.08;
+            currentY += (targetY - currentY) * 0.08;
+
+            heroImg.style.transformOrigin = `${currentX}% ${currentY}%`;
+            heroImg.style.transform = `scale(${scale})`;
+
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        heroImgContainer.addEventListener('mousemove', (e) => {
+            const rect = heroImgContainer.getBoundingClientRect();
+            targetX = ((e.clientX - rect.left) / rect.width) * 100;
+            targetY = ((e.clientY - rect.top) / rect.height) * 100;
+        });
+
+        heroImgContainer.addEventListener('mouseenter', () => {
+            scale = 1.3; // zoom level
+            isHovering = true;
+        });
+
+        heroImgContainer.addEventListener('mouseleave', () => {
+            scale = 1;
+            targetX = 50;
+            targetY = 50;
+            isHovering = false;
+        });
+
+    </script>
 </body>
 
 </html>
