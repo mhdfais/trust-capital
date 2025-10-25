@@ -29,6 +29,60 @@
     <link rel="stylesheet" href="assets/css/spacings.css">
     <!--====== Default css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <style>
+         .theme-btn.style-one {
+            position: relative;
+            display: inline-block;
+            /* padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; */
+            overflow: hidden;
+            transition: color 0.4s ease;
+            z-index: 0;
+        }
+
+        .theme-btn.style-one::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #98FF49;
+            transition: all 1.5s ease;
+            z-index: 0;
+        }
+
+        .theme-btn.style-one:hover::before {
+            left: 0;
+        }
+
+        .theme-btn.style-one:hover {
+            color: #000;
+        }
+
+        .theme-btn.style-one i {
+            margin-left: 8px;
+            transition: transform 0.4s ease;
+        }
+
+        .theme-btn.style-one:hover i {
+            transform: translateX(5px);
+        }
+
+        .theme-btn.style-one span,
+        .theme-btn.style-one i {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -80,7 +134,7 @@
                         </nav>
                         <!--=== Nav Button ===-->
                         <div class="theme-nav-button mt-20 d-block d-md-none">
-                            <a href="contact.html" class="theme-btn style-one">Get A Quote<i
+                            <a href="contact-trust-capital.html" class="theme-btn style-one"> <span>Get A Quote</span><i
                                     class="far fa-arrow-right"></i></a>
                         </div>
                         <!--===  Menu Bottom ===-->
@@ -97,7 +151,7 @@
                     <!--=== Header Nav Right ===-->
                     <div class="nav-right-item">
                         <div class="nav-button d-none d-md-block">
-                            <a href="contact.html" class="theme-btn style-one">GET IN TOUCH<i
+                            <a href="contact-trust-capital.html" class="theme-btn style-one"> <span>GET IN TOUCH</span><i
                                     class="far fa-arrow-right"></i></a>
                         </div>
                         <div class="navbar-toggler">
@@ -521,7 +575,7 @@
                             <div class="col-md-6">
                                 <!--=== Copyright link ===-->
                                 <div class="copyright-link text-md-end text-center">
-                                    <a style="border-left: 1px solid gray;" href="index.html">Terms & Conditions</a>
+                                    <a style="border-right: 1px solid gray; padding-right: 1.5rem;" href="index.html">Terms & Conditions</a>
                                     <a href="index.html">Privacy Policy</a>
                                 </div>
                             </div>

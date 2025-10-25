@@ -55,10 +55,6 @@
 
         }
 
-        /* .card-hover h4:hover{
-color: black;
-            } */
-
         .bizzen-service-item .read-more {
             transition: all 1s ease
         }
@@ -68,6 +64,137 @@ color: black;
             /* adjust as needed */
             /* color: #fff; */
             color: black;
+        }
+
+
+        .background-image {
+            width: 92%;
+            transition: all 2s ease;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .content-card {
+            position: absolute;
+            top: 51%;
+            left: 10%;
+            transform: translateY(-50%);
+            /* background: rgba(255, 255, 255, 0.9); */
+            /* padding: 30px; */
+            /* max-width: 500px; */
+            /* border-radius: 10px; */
+            transition: all 2s ease;
+            height: 20em;
+            padding: 1.5rem 1.5rem;
+        }
+
+        /* Hover effect */
+        .content-wrapper:hover .background-image {
+            width: 100%;
+        }
+
+        .content-wrapper:hover .content-card {
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (max-width: 1024px) {
+            .background-image {
+                width: 95%;
+            }
+
+            .content-card {
+                left: 8%;
+                height: 19rem;
+            }
+
+            .content-wrapper:hover .content-card {
+                left: 50%;
+            }
+        }
+
+        /* Mobile Landscape (<=768px) */
+        @media (max-width: 768px) {
+            .background-image {
+                width: 100%;
+            }
+
+            .content-card {
+                position: relative;
+                top: auto;
+                left: 0;
+                transform: none;
+                width: 90%;
+                margin: 20px auto;
+                height: auto;
+            }
+
+            /* Disable hover shift on mobile (optional) */
+            .content-wrapper:hover .content-card {
+                left: 0;
+                transform: none;
+            }
+        }
+
+        /* Mobile Portrait (<=480px) */
+        @media (max-width: 480px) {
+            .content-card {
+                width: 95%;
+                margin: 15px auto;
+                font-size: 0.9rem;
+            }
+        }
+
+
+        .theme-btn.style-one {
+            position: relative;
+            display: inline-block;
+            /* padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; */
+            overflow: hidden;
+            transition: color 0.4s ease;
+            z-index: 0;
+        }
+
+        .theme-btn.style-one::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #98FF49;
+            transition: all 1.5s ease;
+            z-index: 0;
+        }
+
+        .theme-btn.style-one:hover::before {
+            left: 0;
+        }
+
+        .theme-btn.style-one:hover {
+            color: #000;
+        }
+
+        .theme-btn.style-one i {
+            margin-left: 8px;
+            transition: transform 0.4s ease;
+        }
+
+        .theme-btn.style-one:hover i {
+            transform: translateX(5px);
+        }
+
+        .theme-btn.style-one span,
+        .theme-btn.style-one i {
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
@@ -121,7 +248,7 @@ color: black;
                         </nav>
                         <!--=== Nav Button ===-->
                         <div class="theme-nav-button mt-20 d-block d-md-none">
-                            <a href="contact.html" class="theme-btn style-one">Get A Quote<i
+                            <a href="contact-trust-capital.html" class="theme-btn style-one">GET IN TOUCH<i
                                     class="far fa-arrow-right"></i></a>
                         </div>
                         <!--===  Menu Bottom ===-->
@@ -138,8 +265,8 @@ color: black;
                     <!--=== Header Nav Right ===-->
                     <div class="nav-right-item">
                         <div class="nav-button d-none d-md-block">
-                            <a href="contact.html" class="theme-btn style-one">GET IN TOUCH<i
-                                    class="far fa-arrow-right"></i></a>
+                            <a href="contact-trust-capital.html" class="theme-btn style-one"><span>GET IN TOUCH</span>
+                                <i class="far fa-arrow-right"></i></a>
                         </div>
                         <div class="navbar-toggler">
                             <span></span>
@@ -167,7 +294,7 @@ color: black;
                                         <!-- <span class="sub-title" data-aos="fade-down" data-aos-duration="1000">Business Consulting Agency</span> -->
                                         <h2 class="text-anm">Sustainable Metal Recycling & Global Scrap Trading</h2>
                                         <div class="hero-button" data-aos="fade-up" data-aos-duration="1400">
-                                            <a href="contact.html" class="theme-btn style-one">LEARN MORE<i
+                                            <a href="contact.html" class="theme-btn style-one"><span>LEARN MORE</span><i
                                                     class="far fa-arrow-right"></i></a>
                                         </div>
                                     </div>
@@ -513,13 +640,13 @@ color: black;
 
 
                 <section class="sustainability-section">
-                    <div class="container-fluid">
+                    <div class="">
                         <div class="sustainability text-center" style="color: gray;">SUSTAINABILITY</div>
                         <h1 class="main-heading text-center" style="color: black;">Our Commitment to Sustainability
                             and<br>Environmental Responsibility
                         </h1>
 
-                        <div class="content-wrapper">
+                        <div class="content-wrapper" style="max-width: 100%;">
                             <img src="/assets/images/home-one/sustainability image.jpg" alt="Metal production workshop"
                                 class="background-image">
 
@@ -581,7 +708,7 @@ color: black;
                                 <textarea class="form-control" placeholder="Message" required></textarea>
                             </div>
 
-                            <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                            <button type="submit" class="submit-btn theme-btn style-one" style="background-color: #c2df93; color: #000;"> <span>SEND MESSAGE</span></button>
                         </form>
 
                     </div>
@@ -702,7 +829,7 @@ color: black;
                             <div class="col-md-6">
                                 <!--=== Copyright link ===-->
                                 <div class="copyright-link text-md-end text-center">
-                                    <a style="border-left: 1px solid gray;" href="index.html">Terms & Conditions</a>
+                                    <a style="border-right: 1px solid gray; padding-right: 1.5rem;" href="index.html">Terms & Conditions</a>
                                     <a href="index.html">Privacy Policy</a>
                                 </div>
                             </div>

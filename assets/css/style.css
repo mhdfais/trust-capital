@@ -1366,8 +1366,9 @@ label {
   color: var(--white-color);
 }
 .theme-btn.style-one:hover {
-  background-color: var(--secondary-color);
-  color: var(--white-color);
+  /* background-color: var(--secondary-color);
+  color: var(--white-color); */
+    /* background: #98FF49; */
 }
 @media screen and (max-width: 1199.98px) {
   .theme-btn.style-one {
@@ -1756,10 +1757,10 @@ label {
   color: var(--heading-color);
   background-color: var(--primary-color);
 }
-.nav-right-item .theme-btn.style-one:hover {
+/* .nav-right-item .theme-btn.style-one:hover {
   background-color: var(--secondary-color);
   color: var(--white-color);
-}
+} */
 
 .header-top-bar {
   background-color: var(--primary-black-color);
@@ -2014,10 +2015,10 @@ label {
   color: var(--heading-color);
   background-color: var(--primary-color);
 }
-.bizzen-hero_one .hero-content .theme-btn.style-one:hover {
+/* .bizzen-hero_one .hero-content .theme-btn.style-one:hover {
   background-color: var(--secondary-color);
-  color: var(--white-color);
-}
+  color: var(--white-color); */
+/* } */
 .bizzen-hero_one .text-box {
   margin-left: 70px;
   max-width: 400px;
