@@ -8,9 +8,9 @@
     <meta name="description" content="Business, Consulting, Finance">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--====== Title ======-->
-    <title>Bizzen - Business Consulting HTML Template</title>
+    <title>Agro Trading</title>
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/tcfavicon.png" type="image/png">
     <!--====== Google Fonts ======-->
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
@@ -81,6 +81,198 @@
             position: relative;
             z-index: 1;
         }
+
+
+
+        .content-section {
+            padding: 65px 0px 31px 0px;
+            background: #fff;
+        }
+
+        .divider {
+            width: 1px;
+            background: #d0d0d0;
+            height: 32rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .left-column {
+            position: relative;
+            padding-right: 60px;
+        }
+
+        .right-column {
+            padding-left: 60px;
+        }
+
+        .main-title {
+            font-size: 2.75rem;
+            font-weight: 700;
+            line-height: 1.15;
+            color: #000;
+            margin-bottom: 30px;
+            letter-spacing: -0.02em;
+        }
+
+        .subsection-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #000;
+            margin-bottom: 20px;
+            letter-spacing: -0.01em;
+        }
+
+        .text-content {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #6b6b6b;
+            /* margin-bottom: 20px; */
+        }
+
+        .text-content:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 991px) {
+            .left-column {
+                padding-right: 15px;
+                margin-bottom: 50px;
+            }
+
+            .right-column {
+                padding-left: 15px;
+            }
+
+            .divider {
+                display: none;
+            }
+
+            .main-title {
+                font-size: 2.25rem;
+            }
+
+            .subsection-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .content-section {
+                padding: 50px 0;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+
+            .subsection-title {
+                font-size: 1.35rem;
+            }
+
+            .text-content {
+                font-size: 0.95rem;
+            }
+        }
+
+        .agro-section {
+            overflow: hidden;
+        }
+
+        .agro-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .agro-image img {
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+
+        .transparency-section {
+            padding: 80px 0;
+            background: #fff;
+            height: 40rem;
+        }
+
+        .section-title {
+            font-size: 2.75rem;
+            font-weight: 700;
+            line-height: 1.15;
+            color: #000;
+            margin-bottom: 30px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #8a8a8a;
+            margin-bottom: 18px;
+        }
+
+        .section-text:last-child {
+            margin-bottom: 0;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 450px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 58%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            min-height: 450px;
+        }
+
+        @media (max-width: 991px) {
+            .transparency-section {
+                padding: 50px 0;
+                height: 48rem;
+            }
+
+            .section-title {
+                font-size: 2.25rem;
+            }
+
+            .content-wrapper {
+                min-height: auto;
+                margin-bottom: 30px;
+            }
+
+            .image-container {
+                min-height: 350px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-text {
+                font-size: 0.95rem;
+            }
+
+            .image-container {
+                min-height: 300px;
+            }
+        }
     </style>
 </head>
 
@@ -89,7 +281,7 @@
     <div class="preloader">
         <div class="loading-wrapper">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="assets/images/loader.png" alt="loader"></div>
+            <div id="loading-icon"><img src="assets/images/tcfavicon.png" alt="loader"></div>
         </div>
     </div><!--====== End Preloader ======-->
     <!--====== Start Overlay ======-->
@@ -125,7 +317,8 @@
                                 <li class="menu-item"><a href="about-trust-capital.html">ABOUT</a></li>
                                 <li class="menu-item has-children"><a href="services-trust-capital.html">SERVICES</a>
                                 </li>
-                                <li class="menu-item has-children"><a href="agro-trading-trust-capital.html">AGRO TRADING</a>
+                                <li class="menu-item has-children"><a href="agro-trading-trust-capital.html">AGRO
+                                        TRADING</a>
                                 </li>
                                 <li class="menu-item has-children"><a href="gallery-trust-metal.html">GALLERY</a>
                                 </li>
@@ -189,14 +382,136 @@
                 </section><!--======  End Page Hero Section  ======-->
 
 
+
+
+                <section class="content-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 left-column">
+                                <h1 class="main-title">Expanding Our Expertise Beyond Metals</h1>
+                                <p class="text-content">
+                                    At Trusted Capital, we proudly extend our legacy of excellence from the metal
+                                    recycling and trading industry into the agro-commodity sector, offering a diverse
+                                    portfolio that includes premium wheat and flour, corn, and natural essential oils.
+                                </p>
+                                <p class="text-content">
+                                    Our diversification reflects the same values of integrity, precision, and
+                                    sustainability that have made us a trusted global name in metals — now applied to
+                                    the world of agriculture and natural products.
+                                </p>
+                                <p class="text-content">
+                                    By leveraging our established international trading networks, robust logistics
+                                    infrastructure, and quality assurance systems, we ensure that every product we
+                                    deliver meets the highest global standards.
+                                </p>
+                                <div class="divider d-none d-lg-block"></div>
+                            </div>
+
+                            <div class="col-lg-6 right-column">
+                                <h2 class="subsection-title">Strengthening Supply Chain Excellence</h2>
+                                <p class="text-content">
+                                    With a deep understanding of international logistics and trade compliance, we manage
+                                    the entire supply chain — from procurement to export — ensuring smooth operations
+                                    and complete customer satisfaction.Our logistics strength and quality-control
+                                    systems help clients receive products that match their specific requirements while
+                                    maintaining efficiency, safety, and consistency across every shipment.
+                                </p>
+
+                                <h2 class="subsection-title mt-5">Our Promise for the Future</h2>
+                                <p class="text-content">
+                                    As we continue to expand into new markets, Trusted Capital remains focused on
+                                    delivering excellence with purpose.
+                                </p>
+                                <p class="text-content">
+                                    We aim to connect sustainable agricultural producers with industries that depend on
+                                    quality and trust.
+                                </p>
+                                <p class="text-content">
+                                    Our goal is simple — to provide commodities that nourish people, empower industries,
+                                    and preserve the planet's natural balance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="agro-section py-5 bg-white">
+                    <div class="">
+                        <div class="row g-0">
+                            <!-- Image 1 -->
+                            <div class="col-md-4 col-sm-12">
+                                <div class="agro-image">
+                                    <img src="assets/images/home-one/agro-img-7.jpg" alt="Wheat field"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+
+                            <!-- Image 2 -->
+                            <div class="col-md-4 col-sm-12">
+                                <div class="agro-image">
+                                    <img src="assets/images/home-one/agro-img-8.jpg" alt="Corn harvest"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+
+                            <!-- Image 3 -->
+                            <div class="col-md-4 col-sm-12">
+                                <div class="agro-image">
+                                    <img src="assets/images/home-one/agro-img-9.jpg" alt="Olive oil bottle"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="transparency-section">
+                    <div class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-6">
+                                <div class="content-wrapper">
+                                    <div>
+                                        <h2 class="section-title">Ensuring Transparency and Sustainability</h2>
+                                        <p class="section-text">
+                                            Every transaction at Trusted Capital reflects our commitment to ethical
+                                            sourcing, transparency, and environmental care.
+                                        </p>
+                                        <p class="section-text">
+                                            We work closely with certified growers, mills, and producers to guarantee
+                                            that all products are traceable, pure, and responsibly sourced.
+                                        </p>
+                                        <p class="section-text">
+                                            By integrating sustainable practices into our trading operations, we
+                                            contribute to a more balanced and eco-conscious global marketplace.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="image-container">
+                                    <img src="assets/images/home-one/agro-img-10.jpg"
+                                        alt="White flour powder on black plate with wheat stalks">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section style="    background-color: rgb(153 153 153); height: 5rem;"></section>
+
                 <section class="bizzen-project-sec pt-120 pb-90" style="background-color: white;">
                     <div class="container">
                         <div class="">
-                            <div class="">
-                                <!--=== Section Title ===-->
-                                <div class="section-title text-center" style="max-width: 950px;">
-                                    <!-- <span class="sub-title" style="te" data-aos="fade-down" data-aos-duration="1000">Case Studies</span> -->
-                                    <h2 class="" style="color: black; text-align: left;">Expanding Our Enterprise Beyond
+                            <!-- <div class=""> -->
+                            <!--=== Section Title ===-->
+                            <!-- <div class="section-title text-center" style="max-width: 950px;"> -->
+                            <!-- <span class="sub-title" style="te" data-aos="fade-down" data-aos-duration="1000">Case Studies</span> -->
+                            <!-- <h2 class="" style="background-color: g; text-align: left;">Expanding Our Enterprise Beyond
                                         Metals</h2>
                                 </div>
                                 <p style="color: gray; text-align: left; margin-bottom: 2rem; max-width: 70%;">At
@@ -205,7 +520,7 @@
                                     oils. With the same integrity, logistics strength and supply-chain transparency that
                                     define our metal business, we serve clients across manufacturing, food-processing
                                     and wellness industries worldwide.</p>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
@@ -268,7 +583,8 @@
                                             <div class="content">
                                                 <span class="sub-title" style="color: black;">03</span>
                                                 <h4 class="title"><a href="project-details.html">Essential Oils</a></h4>
-                                                <p style="margin-bottom: 0.5rem;">Complementing our grains portfolio, we also trade natural essential
+                                                <p style="margin-bottom: 0.5rem;">Complementing our grains portfolio, we
+                                                    also trade natural essential
                                                     oils used in wellness, cosmetics and industrial fragrances. Our
                                                     partnerships with sustainable producers guarantee purity,
                                                     authenticity and global compliance—meeting demands for natural and
